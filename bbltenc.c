@@ -189,8 +189,6 @@ static int generate_code( const char* path, const char* name, FILE* out )
       uint8_t r = color & 255;
       uint8_t grey = ( r * 76 + g * 150 + b * 30 ) / 256;
       
-      printf( "%08x ", color );
-      
       if ( a < 128 )
       {
         // transparent
