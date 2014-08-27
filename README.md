@@ -21,6 +21,17 @@ bbltenc
 
 It uses a different format for sprites that takes `2 + width * ( ( height + 7 ) / 8 ) * 2` bytes for an image with `width * height` pixels.
 
+Usage:
+
+```
+$ bbltenc -h
+USAGE: bbltenc [ -n array_name ] [ -o output_path ] input_path
+
+-n array_name     set the generated array name (default = sprite)
+-o output_path    set the name of the generated file (default = stdout)
+input_path        set the name of the PNG image
+```
+
 Bugs
 ----
 
